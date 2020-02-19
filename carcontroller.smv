@@ -38,10 +38,10 @@ ASSIGN
 -- 1 trap property for node coverage (which node?)
 LTLSPEC 
 	G( !(state = stop))
-	G( !(state = slow))
-	G( !(state = fast))
 
 -- Question 1. Write down the remaining 2 NC trap properties yourself
+	G( !(state = slow))
+	G( !(state = fast))
 
 -- 1 trap property for edge coverage (which edge?)
 LTLSPEC 
