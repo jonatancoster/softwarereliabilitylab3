@@ -48,4 +48,8 @@ LTLSPEC
 	G( state=stop & accelerate -> X( !(state=slow) ) )
 
 -- Question 2. Write down the remaining 5 EC trap properties yourself
-
+	G( state=slow & !accelerate -> X( !(state=stop) ) )
+	G( state=slow & brake -> X( !(state=stop) ) )
+	G( state=slow & accelerate -> X( !(state=fast) ) )
+	G( state=fast & brake -> X( !(state=stop) ) )
+	G( state=fast & !accelerate -> X( !(state=slow) ) )
